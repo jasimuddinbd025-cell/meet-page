@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -101,20 +101,22 @@ html, body {
 .bottomIcon:hover{ transform: scale(1.2); filter: drop-shadow(0 0 10px #FFD700);}
 #snapIcon img{filter: brightness(2) drop-shadow(0 0 5px #FFD700);} 
 
-/* Responsive */
+/* Responsive adjustments for mobile screens */
 @media(max-width:480px){
-  .container{gap:48px;}
-  #topBar{ font-size:14px; }
-  #profileNotification{width:85%;}
-  #profileImage{width:65px; height:65px;}
-  #profileText{font-size:13px;}
-  #onlineNotification{font-size:12px; padding:10px 18px;}
-  .mainBox{padding:30px 20px 25px 20px;}
-  .mainBox h1{font-size:24px;}
-  .mainBox p{font-size:14px;}
-  .mainBox button{font-size:16px; padding:14px 20px;}
-  .bottomIcon img{width:45px; height:45px;}
-  #bottomText{font-size:13px;}
+  html, body { font-size:12px; }
+  #topBar{ font-size:12px; padding:6px 0; }
+  #userJoinNotif{ font-size:12px; padding:6px 12px; top:50px; }
+  .container{gap:24px; margin-top:100px;}
+  #profileNotification{width:80%; padding:10px 15px;}
+  #profileImage{width:50px; height:50px;}
+  #profileText{font-size:12px;}
+  #onlineNotification{font-size:11px; padding:8px 12px;}
+  .mainBox{padding:20px 15px 15px 15px; border-radius:25px; width:90%;}
+  .mainBox h1{font-size:20px; margin-bottom:10px;}
+  .mainBox p{font-size:12px; margin-bottom:15px; line-height:1.4;}
+  .mainBox button{font-size:14px; padding:10px 15px; border-radius:20px;}
+  #bottomText{font-size:12px; margin-top:10px;}
+  #bottomBar .bottomIcon img{width:35px; height:35px;}
 }
 </style>
 </head>
@@ -245,3 +247,4 @@ profileNotif.addEventListener('click',()=>{ window.location.href='https://ea.trc
 </script>
 </body>
 </html>
+
